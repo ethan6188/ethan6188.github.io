@@ -1,0 +1,93 @@
+baseURL = "https://ethan6188.github.io/"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh-cn"
+title = "Ethan's Blog"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+enableEmoji = true
+pagination.pagerSize = 10
+
+[minify]
+  disableXML = true
+  minifyOutput = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]  # JSON 输出给站内搜索用
+
+[params]
+  env = "production"
+  description = "Ethan 的个人博客：工程实践、系统设计、工具与效率、读书与思考。"
+  author = "Ethan"
+  defaultTheme = "auto"          # 跟随系统深浅色
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowToc = true
+  TocOpen = false
+  disableSpecial1stPost = false
+  DateFormat = "2006-01-02"
+
+  [params.homeInfoParams]
+    Title = "Hi, I'm Ethan 👋"
+    Content = """
+欢迎来到我的博客。
+
+我会在这里写：**工程实践与踩坑笔记**、**系统设计与架构思考**、**工具与效率**、以及**读书和生活杂感**。
+"""
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/ethan6188"
+
+  [[params.socialIcons]]
+    name = "rss"
+    url = "index.xml"
+
+  [params.assets]
+    disableHLJS = true           # 用 Hugo 内置 Chroma 高亮，不引入 HLJS
+
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
+
+[[menu.main]]
+  identifier = "posts"
+  name = "文章"
+  url = "/posts/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "archives"
+  name = "归档"
+  url = "/archives/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "search"
+  name = "搜索"
+  url = "/search/"
+  weight = 30
+
+[[menu.main]]
+  identifier = "tags"
+  name = "标签"
+  url = "/tags/"
+  weight = 40
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    style = "github"
+  [markup.goldmark.renderer]
+    unsafe = true                # 允许 Markdown 里写原生 HTML
