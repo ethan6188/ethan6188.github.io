@@ -1,8 +1,8 @@
-# ethan.github.io
+# ethan6188.github.io
 
 个人博客，托管在 GitHub Pages。
 
-访问地址：https://ethan.github.io
+访问地址：https://ethan6188.github.io
 
 ## 当前阶段：方案 A —— 纯 HTML 静态站点
 
