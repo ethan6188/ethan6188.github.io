@@ -2,10 +2,12 @@
 
 个人博客：**Hugo** + **PaperMod**，部署在 **GitHub Pages**（`main` 推送后由 Actions 自动构建发布）。
 
-| | 地址 |
-|---|------|
-| 中文（默认） | https://ethan6188.github.io/ |
-| English | https://ethan6188.github.io/en/ |
+
+|         | 地址                                                                 |
+| ------- | ------------------------------------------------------------------ |
+| 中文（默认）  | [https://ethan6188.github.io/](https://ethan6188.github.io/)       |
+| English | [https://ethan6188.github.io/en/](https://ethan6188.github.io/en/) |
+
 
 ---
 
@@ -20,7 +22,7 @@ git submodule update --init --recursive   # 若 clone 时漏了 submodule
 hugo server -D
 ```
 
-浏览器打开终端里提示的地址（一般为 http://localhost:1313）。`-D` 会包含草稿。
+浏览器打开终端里提示的地址（一般为 [http://localhost:1313](http://localhost:1313)）。`-D` 会包含草稿。
 
 ---
 
@@ -52,4 +54,4 @@ git commit -m "chore: bump PaperMod"
 git push
 ```
 
-主题仓库：<https://github.com/adityatelange/hugo-PaperMod>
+主题仓库：[https://github.com/adityatelange/hugo-PaperMod](https://github.com/adityatelange/hugo-PaperMod)
