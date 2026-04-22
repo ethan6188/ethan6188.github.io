@@ -2,7 +2,7 @@
 title: "Hello World：博客上线啦"
 date: 2026-04-22T20:00:00+08:00
 draft: false
-tags: ["杂谈", "博客"]
+tags: ["Hugo"]
 categories: ["杂谈"]
 description: "博客的第一篇文章：为什么重启写作，以及这里的技术栈。"
 ---

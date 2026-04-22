@@ -1,7 +1,6 @@
 ---
-title: "归档"
+title: "Archives"
 layout: "archives"
-url: "/archives/"
 summary: "archives"
 ShowToc: false
 ShowBreadCrumbs: false

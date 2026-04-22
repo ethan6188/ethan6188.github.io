@@ -2,7 +2,12 @@
 
 个人博客，基于 **Hugo + PaperMod**，通过 **GitHub Actions** 自动部署到 **GitHub Pages**。
 
-访问地址：https://ethan6188.github.io
+访问地址：
+
+- 中文（默认）：https://ethan6188.github.io/
+- English：https://ethan6188.github.io/en/
+
+站点为 **整站双语**（Hugo `zh` + `en`）。主题头部可切换语言。
 
 ---
 
@@ -37,13 +42,22 @@ hugo server -D
 
 ---
 
-## 写一篇新文章
+## 写一篇新文章（双语）
+
+同一主题建议中英文各一篇，文件名用 **语言后缀** 配对（Hugo 会互相关联）：
 
 ```bash
-hugo new content posts/my-new-post.md
-# 编辑 content/posts/my-new-post.md
-# 完成后把 front matter 的 draft 改为 false
+hugo new content posts/my-topic.zh.md
+hugo new content posts/my-topic.en.md
 ```
+
+编辑 `content/posts/my-topic.zh.md` 与 `my-topic.en.md`，把 `draft` 改为 `false` 后推送。
+
+**标签约定**：每篇文章 **`tags` 只放一个**、尽量具体（例如 `Hugo`、`Spark`），避免「文章」「博客」等泛词。
+
+### 归档与搜索页
+
+已拆成 `archives.zh.md` / `archives.en.md`、`search.zh.md` / `search.en.md`，一般无需改动。
 
 ### 发布
 
@@ -71,10 +85,10 @@ git push
 ├── .github/workflows/deploy.yml   # 自动部署 workflow
 ├── archetypes/                    # 新文章模板
 ├── assets/                        # Hugo 处理的资源（SCSS、JS）
-├── content/                       # 内容
-│   ├── posts/                     # 文章
-│   ├── archives.md                # 归档页
-│   └── search.md                  # 搜索页
+├── content/                       # 内容（多语言：*.zh.md / *.en.md）
+│   ├── posts/
+│   ├── archives.zh.md / archives.en.md
+│   └── search.zh.md / search.en.md
 ├── data/                          # 数据文件
 ├── i18n/                          # 多语言
 ├── layouts/                       # 自定义布局（覆盖主题）

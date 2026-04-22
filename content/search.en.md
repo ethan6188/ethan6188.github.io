@@ -1,9 +1,8 @@
 ---
-title: "搜索"
+title: "Search"
 layout: "search"
-url: "/search/"
 summary: "search"
-placeholder: "搜索文章..."
+placeholder: "Search posts..."
 ShowToc: false
 ShowBreadCrumbs: false
 ---
