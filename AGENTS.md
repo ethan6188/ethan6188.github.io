@@ -22,6 +22,7 @@
 ## 标签与分类
 
 - **`tags`**：每篇文章 **只使用一个** tag，且必须 **具体、可检索**（如 `Hugo`、`Spark`、`GitHub Actions`）
+- **Agent 流程**：先**主动给出一个最合适的建议 tag**（附 1 句理由）；作者确认/修改后再写入 front matter。未获确认前**不得**将「猜的」tag 写成定稿；草稿里可用 `tags: []` 占位。
 - **禁止**：过于宽泛的 tag，例如「文章」「博客」「随笔」等（除非正文主题就是该抽象概念本身）
 - **`categories`**：可用于稍宽的分组（如「杂谈」「Notes」）；与 tags 分工——**细粒度用 tag，栏目感用 category**
 
@@ -45,6 +46,7 @@ archetypes/default.md   # 新文章模板
 
 ## Git / 提交（建议）
 
+- **分支策略**：这是作者的**个人仓库**，默认**直接在 `main` 上开发并提交**；不为普通写作、配置微调创建 feature 分支。仅当作者明确要求或有破坏性改动时才开分支。
 - 文章：`post: <简短英文或中文描述>`
 - 配置/主题：`chore:`、`feat:`、`fix:` 等常规前缀即可
 - 推送含 `.github/workflows/` 变更时，需具备能更新 workflow 的 GitHub token 权限（如 `workflow` scope）
