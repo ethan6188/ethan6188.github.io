@@ -21,8 +21,8 @@
 
 ## 标签与分类
 
-- **`tags`**：每篇文章 **只使用一个** tag，且必须 **具体、可检索**（如 `Hugo`、`Spark`、`GitHub Actions`）
-- **Agent 流程**：先**主动给出一个最合适的建议 tag**（附 1 句理由）；作者确认/修改后再写入 front matter。未获确认前**不得**将「猜的」tag 写成定稿；草稿里可用 `tags: []` 占位。
+- **`tags`**：每篇文章 **1–3 个** tag，且必须 **具体、可检索**（如 `Hugo`、`Spark`、`GitHub Actions`）
+- **Agent 流程**：由 Agent **自行选定最贴切的 tag 并直接写入 front matter 定稿**，无需作者确认
 - **禁止**：过于宽泛的 tag，例如「文章」「博客」「随笔」等（除非正文主题就是该抽象概念本身）
 - **`categories`**：可用于稍宽的分组（如「杂谈」「Notes」）；与 tags 分工——**细粒度用 tag，栏目感用 category**
 

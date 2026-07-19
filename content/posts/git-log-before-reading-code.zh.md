@@ -2,7 +2,7 @@
 title: "读代码之前，先读 Git 历史：五条命令给项目做体检"
 date: 2026-07-19T16:33:00+08:00
 draft: false
-tags: []
+tags: ["Git"]
 categories: ["工程实践"]
 description: "Ally Piechowski 的文章《The Git Commands I Run Before Reading Any Code》读后摘要：接手陌生代码库时，先用五条 git log 命令看清变更热点、Bus Factor、Bug 聚集、项目节奏与救火频率。"
 ---

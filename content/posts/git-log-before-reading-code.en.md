@@ -2,7 +2,7 @@
 title: "Before Reading the Code, Read the Git History: A Five-Command Checkup"
 date: 2026-07-19T16:33:00+08:00
 draft: false
-tags: []
+tags: ["Git"]
 categories: ["Engineering Practice"]
 description: "Notes on Ally Piechowski's article \"The Git Commands I Run Before Reading Any Code\": five git log commands that reveal churn hotspots, bus factor, bug clustering, project momentum, and firefighting frequency before you open a single source file."
 ---
